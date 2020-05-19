@@ -1,0 +1,8 @@
+digraph G { rankdir = LR;
+ node [shape=box];
+nodoRaiz[label= "Funcion Hash"];
+nodoRaiz->nodo234[label = "9"];
+nodo234[label = "sdfhj
+234jkh
+57dc8142bc6d8e0728c1867a7c1f4aca"];
+}

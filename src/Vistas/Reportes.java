@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import Controladores.*;
 import java.awt.Image;
+import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
@@ -238,10 +239,11 @@ public class Reportes extends javax.swing.JFrame {
 
     private void btnVerImagenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerImagenActionPerformed
         // TODO add your handling code here
-        
-       
+        //SELECCIONAR PATH ARCHIVO
+        File selectedFile;
+        selectedFile = new File(this.imagen);
         ImageIcon imagen;
-        imagen = new ImageIcon(getClass().getResource(this.imagen));
+        imagen = new ImageIcon(selectedFile.getAbsolutePath());//enviar path absoluto
         ImageIcon icono = new ImageIcon(imagen.getImage());
         lblFoto.setIcon(icono);
 
@@ -368,7 +370,7 @@ public class Reportes extends javax.swing.JFrame {
           
             rt.exec(cmd);
 //C:\Users\gerso\Documents\NetBeansProjects\EDDProyecto2
-
+//Donde jalas la imagen??
             //lblFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("c:\\Users\\gerso\\Documents\\NetBeansProject\\EDDProyecto2\\ArbolAVL.jpg")));
         } catch (Exception ex) {
             ex.printStackTrace();

@@ -1,2 +1,6 @@
 digraph G {
- }
+ nodosd[label = " sd"];
+nodofvs[label = " fvs"];
+nodosd->nodofvs;
+nodofvs[label = " fvs"];
+}
